@@ -1,0 +1,118 @@
+@import '_animations.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    background: rgb(58, 133, 180);
+    background: linear-gradient(141deg, rgba(41, 95, 129, 0.192) 0%, rgba(19, 69, 100, 0.716) 100%);
+    background-repeat: no-repeat;
+    /* overflow-x: scroll; */
+    overflow-y: hidden;
+    /* position: relative; */
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+}
+
+section {
+    scroll-snap-align: start;
+    /* position: absolute; */
+    /* min-height: 100vh; */
+    min-height: 100%;
+    min-width: 100%;
+    display: inline-block;
+    display: -webkit-inline-box;
+}
+
+.card {
+    background-color: rgb(30, 43, 52);
+    box-shadow: 0 9px 10px -6px rgb(32, 32, 32);
+    border-radius: 10px;
+    position: relative;
+}
+
+.card h1 {
+    font-size: 40px;
+}
+
+.card img {
+    height: 175px;
+    width: 175px;
+    object-fit: cover;
+    padding: 0;
+    border: solid 7px coral;
+}
+
+.card ul {
+    list-style-type: none;
+}
+
+.card .social button {
+    background-color: rgb(36, 51, 62);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+    box-shadow: 0 2px 10px -6px black;
+}
+
+.card .social button:hover {
+    background-color: rgb(48, 67, 80);
+}
+
+.card .social a {
+    text-decoration: none;
+}
+
+.intro .swipe-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    /* background-color: white; */
+    animation: swipeLeft 1s ease-in-out infinite normal none;
+}
+
+.intro .swipe-indicator::before {
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 0 2px 2px;
+    content: "";
+    display: block;
+    height: 20px;
+    left: 0px;
+    position: absolute;
+    width: 20px;
+    margin-top: -3px;
+    /* top: 50%; */
+    bottom: 8px;
+    transition: left 0.1s;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.intro .swipe-indicator::after {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 2px;
+    left: -2px;
+    position: absolute;
+    /* top: 50%; */
+    bottom: 17px;
+    width: 40px;
+    transition: left 0.1s;
+}
+
+
+
+@media (min-width: 768px) {
+    .card {
+        width: 600px;
+    }
+}
