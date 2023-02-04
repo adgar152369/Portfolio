@@ -75,7 +75,7 @@ section {
     bottom: 20px;
     left: 50%;
     /* background-color: white; */
-    animation: swipeLeft 1s ease-in-out infinite normal none;
+    animation: swipeLeft 1.5s ease-in-out infinite normal none;
 }
 
 .intro .swipe-indicator::before {
