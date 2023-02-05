@@ -1,0 +1,10 @@
+nav ul {
+    list-style-type: none;
+}
+
+nav ul a {
+    color: white;
+}
+nav ul a.active {
+    color: darkgrey;
+}

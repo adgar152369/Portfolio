@@ -1,4 +1,6 @@
 const helloSection = document.querySelector('#hello');
+const helloSectionParagraph = document.querySelector('#hello p');
+const helloSectionHeader = document.querySelector('#hello h2');
 
 export default function intersectObserve() {
     // Create an IntersectionObserver
@@ -6,7 +8,8 @@ export default function intersectObserve() {
         // Check if the element is intersecting
         if (entries[0].isIntersecting) {
             // Add the class to the element to trigger the animation
-            helloSection.classList.add("smooth-appear");
+            helloSectionHeader.classList.add("smooth-appear");
+            helloSectionParagraph.classList.add("come-from-right")
             // Stop observing the element
             observer.unobserve(helloSection);
         }
