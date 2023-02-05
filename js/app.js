@@ -1,19 +1,11 @@
 import intersectObserve from './intersection.js';
+import ScrollSpy from 'scrollspy-js';
 
-intersectObserve();
+var spy = new ScrollSpy('#js-scrollspy', {
+    nav: '.js-scrollspy-nav > li > a',
+    className: 'is-inview'
+  });
 
 
-const navLinks = document.querySelectorAll('nav a');
+// intersectObserve();
 
-// // create active nav links
-// navLinks.forEach((link) => {
-//     link.addEventListener('click', (e) => {
-//         if (!link.classList.contains('active')) {
-//             link.classList.toggle('active');
-//             console.log(link)
-//         } else {
-//             // link.classList.remove('active');
-//             console.log(link)
-//         }
-//     })
-// })

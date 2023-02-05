@@ -1,9 +1,33 @@
+nav {
+    position: fixed;
+    bottom: 0;
+    inset-inline: 0;
+    background-color: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(5px);
+    padding: 20px 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav ul a.active,
+nav ul a:hover {
+  border-bottom: #ccc .2em solid;
+  color: #ccc;
+}
+
 nav ul {
     list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-inline: 15px;
 }
 
 nav ul a {
-    color: white;
+    color: black;
+    text-decoration: none;
+    /* font-weight: 300; */
 }
 nav ul a.active {
     color: darkgrey;
