@@ -1,3 +1,5 @@
+import intersectObserve from './intersection.js';
+
 const portfolioSections = document.querySelectorAll('.portfolio-section');
 const helloSection = document.querySelector('#hello');
 const helloSectionParagraph = document.querySelector('#hello p');
@@ -29,3 +31,6 @@ const observer = new IntersectionObserver(addActiveClass, options);
 portfolioSections.forEach(section => {
     observer.observe(section);
 })
+
+
+intersectObserve();

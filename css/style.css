@@ -96,7 +96,7 @@ section {
     width: 100%;
 }
 
-.portfolio-card .social ul i{
+.portfolio-card .social ul i {
     font-weight: 400;
     color: black;
     transition: all .2s;
@@ -105,7 +105,7 @@ section {
 
 .portfolio-card .social ul i.fa-square-github {
     color: grey;
-} 
+}
 
 .portfolio-card .social ul i.fa-linkedin {
     color: #0d5071;
@@ -113,16 +113,181 @@ section {
 
 /* Hello Section */
 #hello {
-    background-color: #8ECAE6;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(141deg, #000000 0%, #2f5f6b 94%);
+    padding: 25px 15px;
+}
+
+#hello h2 {
+    font-size: 2rem;
+    color: #f3f3f3;
+}
+
+#hello h3 {
+    opacity: 0;
+    color: #8ECAE6;
+    font-size: 1.5rem;
+    /* animation-delay: 2.5s; */
 }
 
 #hello p {
-    background-color: rgba(255, 255, 255, .25);
-    margin: 10px 15px;
-    padding: 15px;
-    border-radius: 10px;
-    animation: comeFromRight 2s forwards;
+    border-left: solid 1px #2f5f6b;
+    /* border-bottom: solid 1px #2f5f6b; */
+    /* border-bottom-left-radius: 5px; */
+    margin-top: 30px;
+    padding-left: 15px;
+    padding-bottom: 8px;
+    /* border-radius: 10px; */
+    line-height: 1.75rem;
+    opacity: 0;
+    transform: translateX(60px);
+    position: relative;
+    color: #d4d4d4;
+    font-size: 1.25rem;
 }
+
+#hello #intro-highlight {
+    color: #8ECAE6;
+}
+
+#hello .changing-label {
+    position: relative;
+    width: 50%;
+    height: 28px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+#hello .highlight {
+    position: absolute;
+    animation: topToBottom 12.5s ease-in infinite 0s;
+    -ms-animation: topToBottom 12.5s ease-in infinite 0s;
+    -webkit-animation: topToBottom 12.5s ease-in infinite 0s;
+    opacity: 0;
+    overflow: hidden;
+}
+
+#hello .highlight:nth-of-type(2) {
+    animation-delay: 2.5s;
+}
+
+#hello .highlight:nth-of-type(3) {
+    animation-delay: 5s;
+}
+
+#hello .highlight:nth-of-type(4) {
+    animation-delay: 7.5s;
+}
+
+#hello .highlight:nth-of-type(5) {
+    animation-delay: 10s;
+}
+
+#hello .highlight-word {
+    --bg-size: 400%;
+    --color-one: rgb(194, 67, 25);
+    --color-two: rgb(255, 198, 84);
+    font-size: 1.25rem;
+    background: linear-gradient(90deg,
+            var(--color-one),
+            var(--color-two),
+            var(--color-one)) 0 0 / var(--bg-size) 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: move-bg 8s infinite linear;
+}
+
+#hello .skills-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#hello .skills {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 15px;
+    justify-items: center;
+}
+
+#hello .skills .skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    /* display: inline-block; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: solid 1px #d3d3d3;
+    height: 60px;
+    width: 60px;
+}
+
+#hello .skills .skill .fa-css3-alt,
+#hello .skills .skill .fa-html5,
+#hello .skills .skill .fa-js,
+#hello .skills .skill .fa-sass {
+    position: relative;
+    filter: drop-shadow(0px 2px 3px rgb(167, 167, 167));
+}
+
+#hello .skills .skill .fa-js::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 20px;
+    width: 20px;
+    bottom: 2px;
+    right: 1px;
+    z-index: -1;
+}
+
+#hello .skills .skill:not(:last-of-type) {
+    /* margin-right: 50px; */
+}
+
+#hello .skills .skill:nth-of-type(2) {
+    animation-delay: 3.25s;
+}
+
+#hello .skills .skill:nth-of-type(3) {
+    animation-delay: 3.5s;
+}
+
+#hello .skills .skill:nth-of-type(4) {
+    animation-delay: 3.75s;
+}
+
+#hello .skills .fa-js {
+    color: #ebd438;
+}
+
+#hello .skills .fa-css3-alt {
+    color: #0d43d6;
+}
+
+#hello .skills .fa-html5 {
+    color: #e34c27;
+}
+
+#hello .skills .fa-sass {
+    color: #ff79e4;
+}
+
+.pop-up-obo {
+    animation: popUpObo .75s forwards ease-in-out 3s;
+}
+
+
+.come-from-right {
+    animation: comeFromRight 2s forwards 1s;
+}
+
 
 .smooth-appear {
     animation: comeFromTop 4s forwards;

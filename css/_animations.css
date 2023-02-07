@@ -3,6 +3,7 @@
         opacity: 0;
         transform: translateX(10px);
     }
+
     to {
         opacity: 1;
         transform: translateX(-15px);
@@ -30,5 +31,56 @@
     to {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@keyframes move-bg {
+    to {
+        background-position: 400% 0;
+    }
+}
+
+@keyframes topToBottom {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0;
+        -webkit-transform: translateY(-50px);
+    }
+
+    10% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+
+    25% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+
+    30% {
+        opacity: 0;
+        -webkit-transform: translateY(50px);
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes popUpObo {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
     }
 }
