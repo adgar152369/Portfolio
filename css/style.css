@@ -10,10 +10,6 @@
     scroll-behavior: smooth;
 }
 
-html {
-    /* overflow: hidden; */
-}
-
 html,
 body {
     height: 100%;
@@ -112,6 +108,7 @@ section {
 }
 
 /* Hello Section */
+
 #hello {
     background: rgb(0, 0, 0);
     background: linear-gradient(141deg, #000000 0%, #2f5f6b 94%);
@@ -132,12 +129,9 @@ section {
 
 #hello p {
     border-left: solid 1px #2f5f6b;
-    /* border-bottom: solid 1px #2f5f6b; */
-    /* border-bottom-left-radius: 5px; */
     margin-top: 30px;
     padding-left: 15px;
     padding-bottom: 8px;
-    /* border-radius: 10px; */
     line-height: 1.75rem;
     opacity: 0;
     transform: translateX(60px);
@@ -220,7 +214,6 @@ section {
     justify-content: center;
     align-items: center;
     opacity: 0;
-    /* display: inline-block; */
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
     border: solid 1px #d3d3d3;
@@ -245,10 +238,6 @@ section {
     bottom: 2px;
     right: 1px;
     z-index: -1;
-}
-
-#hello .skills .skill:not(:last-of-type) {
-    /* margin-right: 50px; */
 }
 
 #hello .skills .skill:nth-of-type(2) {
