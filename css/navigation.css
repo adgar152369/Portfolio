@@ -43,9 +43,9 @@ nav ul a {
 @media (min-width: 1024px) {
     #footer-nav {
         bottom: 0;
-        right: 0;
+        right: auto;
         top: 0;
-        left: auto;
+        left: 0;
         max-width: 75px;
     }
 
