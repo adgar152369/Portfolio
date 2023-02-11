@@ -45,6 +45,7 @@ section {
 .portfolio-card {
     background-color: #f5f5f5;
     max-height: 400px;
+    max-width: 400px;
     margin: 20px 10px;
     border-radius: 10px;
     padding-top: 20px;
@@ -286,4 +287,47 @@ section {
 
 #projects {
     background-color: cadetblue;
+}
+
+
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .portfolio-card {
+        margin: 20px auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    #portfolio {
+        /* background: rgb(0, 0, 0);
+        background: linear-gradient(141deg, #000000 0%, #5ea6b9 94%); */
+        background: #023047;
+    }
+
+    #hello p,
+    h2,
+    .skills-container {
+        max-width: 900px;
+    }
+
+    #hello #intro-highlight {
+        display: inline-block;
+        margin-bottom: 1.5rem;
+    }
+
+    body {
+        overflow-x: hidden;
+        /* font-family: 'Roboto', sans-serif; */
+    }
+
+    .carousel-container {
+        height: 100%;
+        width: 100%;
+        /* scroll-snap-type: y mandatory; */
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        /* flex: none; */
+    }
 }
