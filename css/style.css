@@ -23,7 +23,7 @@ body {
 .carousel-container {
     height: 100%;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1440px;
     margin-inline: auto;
     scroll-snap-type: x mandatory;
     display: flex;
@@ -289,6 +289,7 @@ section {
 
 #projects {
     background-color: cadetblue;
+    padding-inline: 15px;
 }
 
 #projects h2 {
@@ -298,8 +299,9 @@ section {
 
 .project-carousel-container {
     position: relative;
-    width: 725px;
-    height: 400px;
+    display: none;
+    /* width: 225px; */
+    /* height: 400px; */
     overflow: hidden;
     /* grid-column: 2/-1; */
     border-radius: 10px;
@@ -365,9 +367,11 @@ section {
 .project-list .project-list__item {
     counter-increment: my-awesome-counter;
     margin-block: 100px;
+    display: flex;
 }
 
 .project-list .project-list__item__description {
+    display: none;
     line-height: 1.5rem;
     position: relative;
 }
@@ -390,7 +394,7 @@ section {
     }
 
     .project-list .project-list__item__description {
-        grid-column: 1/ span 3;
+        grid-column: 1/ span 2;
     }
 }
 
@@ -409,6 +413,18 @@ section {
         overflow: hidden;
         /* grid-column: 4/-1; */
         border-radius: 10px;
+    }
+
+    .project-carousel-container {
+        display: block;
+    }
+
+    .project-list .project-list__item {
+        display: block;
+    }
+
+    .project-list .project-list__item__description {
+        display: block;
     }
 
     .pop-up-obo {
@@ -504,3 +520,4 @@ section {
         /* flex: none; */
     }
 }
+
