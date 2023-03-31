@@ -299,7 +299,7 @@ section {
     width: 725px;
     height: 400px;
     overflow: hidden;
-    grid-column: 2/-1;
+    /* grid-column: 2/-1; */
     border-radius: 10px;
 }
 
@@ -356,12 +356,10 @@ section {
     /* margin-block: 40px; */
 }
 
-.project-list .project-list__item__flex {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    margin-top: 20px;
+.project-list .project-list__item__grid {
+    grid-template-columns: auto;
 }
+
 .project-list .project-list__item {
     counter-increment: my-awesome-counter;
     margin-block: 100px;
@@ -371,6 +369,7 @@ section {
     line-height: 1.5rem;
     position: relative;
 }
+
 .project-list .project-list__item__description::before {
     content: counter(my-awesome-counter);
     font-size: 5rem;
@@ -387,9 +386,29 @@ section {
     .portfolio-card {
         margin: 20px auto;
     }
+
+    .project-list .project-list__item__description {
+        grid-column: 1/ span 3;
+    }
 }
 
 @media (min-width: 1024px) {
+    .project-list .project-list__item__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        margin-block: 20px;
+    }
+
+    .project-carousel-container {
+        position: relative;
+        width: 600px;
+        height: 400px;
+        overflow: hidden;
+        /* grid-column: 4/-1; */
+        border-radius: 10px;
+    }
+
     .pop-up-obo {
         animation: popUpObo .25s forwards ease-in-out 1.5s;
     }
@@ -425,6 +444,7 @@ section {
 
     .section-content {
         margin-left: 10%;
+        padding-right: 20px;
         /* position: relative; */
     }
 
