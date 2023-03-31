@@ -1,111 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://kit.fontawesome.com/3a2bd97600.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
-			<link rel="stylesheet" href="css/animations.css">
-		<link rel="stylesheet" href="css/style.css">
-		<title>Adam Garcia Portfolio</title>
-	</head>
+  <head>
+    <title>Adam Garcia Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/3a2bd97600.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-	<body>
-		<div class="carousel-container">
-			<section class="portfolio-section" id="portfolio">
-				<div class="portfolio-card">
-					<header>
-						<img src="assets/adam-2.jpeg" alt="" height="150px" width="150px">
-						<h1>Adam Garcia</h1>
-						<p>Frontend Web Developer</p>
-					</header>
-					<div class="social">
-						<ul>
-							<li>
-								<a href="https://github.com/adgar152369" target="_blank"><i class="fa-brands fa-square-github fa-3x"></i>
-								</a>
-							</li>
-							<li title="linkedin profile">
-								<a href="https://www.linkedin.com/in/adam-garcia-031575230" target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i>
-								</a>
-							</li>
-							<li title="email">
-								<a href="mailto:adgar1523@gmail.com"><i class="fa-solid fa-paper-plane fa-2x fa-bounce" style="--fa-bounce-height: -5px; --fa-animation-duration: 2.5s; --fa-bounce-rebound: 0s"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<section class="portfolio-section" id="hello">
-				<div class="section-content">
-					<h2>Hello.</h2>
-					<p><span id="intro-highlight">I am a lifelong</span>
-						<span class="changing-label">
-							<span class="highlight"><span class="highlight-word"> learner.</span></span>
-							<span class="highlight" id="student"><span class="highlight-word"> student.</span></span>
-							<span class="highlight" id="developer"><span class="highlight-word"> developer.</span></span>
-							<span class="highlight" id="creator"><span class="highlight-word"> creator.</span></span>
-							<span class="highlight" id="builder"><span class="highlight-word"> builder.</span></span>
-						</span><br> Whether I'm working on a solo project or collaborating with a team, I am dedicated to delivering
-						the highest quality results and constantly pushing my limits.
-					</p>
-					<div class="skills-container">
-						<h3>Skills</h3>
-						<ul class="skills">
-							<li class="skill"><i class="fa-brands fa-html5 fa-2x"></i></li>
-							<li class="skill"><i class="fa-brands fa-css3-alt fa-2x"></i></li>
-							<li class="skill"><i class="fa-brands fa-js fa-2x"></i></li>
-							<li class="skill"><i class="fa-brands fa-sass fa-2x"></i></li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<section class="portfolio-section" id="projects">
-				<div class="section-content">
-					<h2>Projects</h2>
-					<ul class="project-list">
-						
-						<li class="project-list__item">
-							<div class="project-list__item__grid">
-								<div class="project-list__item__description">
-									<p>
-										My <strong>Node.js</strong> todo project is a promising work in progress that has yet to be hosted on a suitable platform. Despite this, the project showcases my skills in programming with node.js and my dedication to creating a useful application for managing tasks. Scroll through the images to get a peek at what I've been working on! 
-									</p>
-									<p>
-										For this project, I used <strong>Express</strong> framework to develop the backend, such as the RESTful routes. I also used <strong>mongoose</strong> to connect to one of my MongoDB databases, and <strong>EJS</strong> for the templating engine. Finally, I decided to be a little more unique and use <strong>Bulma</strong> to build the styles.
-									</p>
-								</div>
-								<div class="project-carousel-container">
-									<div class="project-carousel-images">
-										<img src="assets/home.png">
-										<img src="assets/update-task.png">
-										<img src="assets/add-new.png">
-									</div>
-									<div class="project-carousel-thumbnails">
-										<img src="assets/home.png" data-index="0">
-										<img src="assets/update-task.png" data-index="1">
-										<img src="assets/add-new.png" data-index="2">
-									</div>
-								</div>
-							</div>
-							<a href="https://github.com/adgar152369/Todo-List" class="project-list__item__link" target="_blank">Todo List</a>
-						</li>
-					</div>
-					</ul>
-			</section>
-		</div>
-		<nav id="footer-nav">
-			<ul>
-				<li class="portfolio active"><a href="#portfolio"><i class="fa-solid fa-house-chimney"></i></a></li>
-				<li class="hello"><a href="#hello"><i class="fa-solid fa-user"></i></a></li>
-				<li class="projects"><a href="#projects"><i class="fa-solid fa-cubes-stacked"></i></a></li>
-			</ul>
-		</nav>
-		<script type="module" src="js/app.js"></script>
-	</body>
+  <body>
+    <nav class="navbar is-fixed-top">
+      <div class="navbar-brand">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbar-menu" class="is-flex is-justify-content-center is-align-content-center">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#home">Home</a>
+          <a class="navbar-item" href="#about">About</a>
+          <a class="navbar-item" href="#skills">Skills</a>
+          <a class="navbar-item" href="#projects">Projects</a>
+        </div>
+      </div>
+    </nav>
+    <section id="home" class="hero is-fullheight is-bold is-primary">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title"> Adam Garcia </h1>
+          <h2 class="subtitle"> I'm a Junior Frontend Developer </h2>
+        </div>
+      </div>
+      <div class="hero-footer">
+        <div class="container">
+          <!-- Add content to the hero footer if needed -->
+        </div>
+      </div>
+    </section>
+    <section id="about" class="section">
+      <div class="container">
+        <h1 class="title">About Me</h1>
+        <p>I am a passionate junior frontend developer with a keen eye for design and a love for coding. I am proficient
+          in HTML, CSS, and JavaScript, and have experience working with various front-end frameworks, including Bulma
+          and Bootstrap.</p>
+      </div>
+    </section>
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="title">Skills</h2>
+        <div class="columns is-multiline">
+          <div class="column is-half-tablet is-one-third-desktop">
+            <div class="box skill-box">
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <h3 class="title is-4"><span class="skill-icon has-text-primary"><i
+                          class="fab fa-html5"></i></span>HTML5</h3>
+                    <p>Proficient in writing semantic and accessible HTML code for web pages and web applications.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="column is-half-tablet is-one-third-desktop">
+            <div class="box skill-box">
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <h3 class="title is-4"><span class="skill-icon has-text-primary"><i
+                          class="fab fa-css3"></i></span>CSS3</h3>
+                    <p>Proficient in writing modern CSS code using Flexbox, Grid, and other layout techniques.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="column is-half-tablet is-one-third-desktop">
+            <div class="box skill-box">
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <h3 class="title is-4"><span class="skill-icon has-text-primary"><i
+                          class="fab fa-js"></i></span>JavaScript</h3>
+                    <p>Proficient in writing vanilla JavaScript code and working with popular libraries and frameworks
+                      such as React and Vue.js.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- more skills here -->
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="section">
+      <div class="container">
+        <h1 class="title">Projects</h1>
+        <div class="columns is-multiline">
+          <div class="column is-half">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="assets/home.png" alt="Project 1">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Project 1</p>
+                    <p class="subtitle is-6">Description of Project 1</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p> This todo project is a promising work in progress that has yet to be hosted on a suitable
+                    platform. Despite this, the project showcases my skills in programming with node.js and my
+                    dedication to creating a useful application for managing tasks. Scroll through the images to get a
+                    peek at what I've been working on! </p>
+                  <p> For this project, I used <strong>Express</strong> framework to develop the backend, such as the
+                    RESTful routes. I also used <strong>mongoose</strong> to connect to one of my MongoDB databases, and
+                    <strong>EJS</strong> for the templating engine. Finally, I decided to be a little more unique and
+                    use <strong>Bulma</strong> to build the styles. </p>
+                </div>
+                <div class="buttons">
+                  <a class="button is-primary" href="#">View Project</a>
+                  <a class="button is-info" href="#">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="project2.png" alt="Project 2">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Project 2</p>
+                    <p class="subtitle is-6">Description of Project 2</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+                </div>
+                <div class="buttons">
+                  <a class="button is-primary" href="#">View Project</a>
+                  <a class="button is-info" href="#">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>&copy; 2023 Jane Doe. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 
 </html>

@@ -1,0 +1,69 @@
+html {
+  scroll-behavior: smooth;
+}
+
+nav.navbar{
+  background-color: rgba(0, 0, 0, .4) !important;
+  backdrop-filter: blur(10px);
+}
+
+#navbar-menu .navbar-item {
+  background-color: transparent;
+  color: #c7d3e5;
+}
+
+#navbar-menu .navbar-item:hover {
+  color: #9ca7b9;
+}
+
+/* .navbar-item:hover .icon {
+  color: #518ded;
+}
+
+.navbar-item:hover .subtitle {
+  color: #518ded;
+} */
+
+.skill-box {
+  height: 100%;
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.media-content {
+  flex: 1;
+}
+
+/* Position the skill icons to the left of the skill titles */
+.skill-icon {
+  display: inline-block;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+.hero.is-primary {
+  background-color: #fc466b;
+  background-image: linear-gradient(to right, #fc466b 0%, #00b09b 68%) !important;
+  background-size: 200%;
+  animation: gradient 10s ease infinite;
+}
+
+/* Define animations */
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
