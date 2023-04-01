@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
 
-  <body class="has-background-dark has-text-light">
+  <body>
     <nav class="navbar is-fixed-top">
       <div class="navbar-brand">
         <a role="button" class="navbar-burger has-text-grey-light" aria-label="menu" aria-expanded="false">
@@ -19,9 +19,8 @@
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div id="navbar-header-menu" class="navbar-menu"
-        class="is-flex is-justify-content-center is-align-content-center">
-        <div class="navbar-start">
+      <div id="navbar-header-menu" class="navbar-menu">
+        <div class="navbar-start is-justify-content-flex-end">
           <a class="navbar-item" href="#home">Home</a>
           <a class="navbar-item" href="#about">About</a>
           <a class="navbar-item" href="#skills">Skills</a>
@@ -44,18 +43,23 @@
     </section>
     <section id="about" class="section">
       <div class="container">
-        <h1 class="title has-text-light">About Me</h1>
-        <p>I am a passionate junior frontend developer with a keen eye for design and a love for coding. I am proficient
-          in HTML, CSS, and JavaScript, and have experience working with various front-end frameworks, including Bulma
-          and Bootstrap. Even a little bit of React.</p>
+        <h1 class="title has-text-centered">About Me</h1>
+        <p class="is-size-5">I am a passionate junior frontend developer with a keen eye for design and a love for coding. As a developer
+          located in a small town in Idaho, and with the current tech job market status, I am extremely grateful for the
+          opportunity to be able to work with an amazing company, Shelfology.</p>
+        <p class="is-size-5"> I am proficient in HTML, CSS, and JavaScript, and have experience working with various front-end frameworks,
+          including Bulma and Bootstrap. Even a little bit of React. </p>
+        <p class="is-size-5">When I'm not coding, I love to play basketball and football, both of which keep me physically active and
+          mentally refreshed. I also enjoy playing video games as a way to unwind and challenge my problem-solving
+          skills.</p>
       </div>
     </section>
     <section id="skills" class="section">
       <div class="container">
-        <h2 class="title has-text-light">Skills</h2>
+        <h2 class="title">Skills</h2>
         <div class="columns is-multiline">
           <div class="column is-half-tablet is-one-third-desktop">
-            <div class="box skill-box has-background-black has-text-white-ter">
+            <div class="box skill-box has-background-dark has-text-white-ter">
               <article class="media">
                 <div class="media-content">
                   <div class="content">
@@ -82,14 +86,15 @@
             </div>
           </div>
           <div class="column is-half-tablet is-one-third-desktop">
-            <div class="box skill-box has-background-black">
+            <div class="box skill-box has-background-dark">
               <article class="media">
                 <div class="media-content">
                   <div class="content">
                     <h3 class="title is-4 has-text-light"><span class="skill-icon has-text-primary"><i
                           class="fab fa-js"></i></span>JavaScript</h3>
-                    <p class="has-text-grey-light">Proficient in writing vanilla JavaScript code, and dabbed a little
-                      bit into libraries and frameworks such as React.</p>
+                    <p class="has-text-grey-light">Proficient in writing vanilla JavaScript code, including different
+                      programming paradigms, such as, OOP, functional, event-driven, asynchronous, and imperative
+                      programming.</p>
                   </div>
                 </div>
               </article>
@@ -109,13 +114,38 @@
             </div>
           </div>
           <div class="column is-half-tablet is-one-third-desktop">
-            <div class="box skill-box has-background-black">
+            <div class="box skill-box has-background-dark">
               <article class="media">
                 <div class="media-content">
                   <div class="content">
                     <h3 class="title is-4 has-text-light"><span class="skill-icon has-text-primary"><i
                           class="fab fa-github"></i></span>Git and Github</h3>
-                    <p class="has-text-grey-light">Proficient with Git and GitHub. Can use version control, manage repositories, and collaborate with others.</p>
+                    <p class="has-text-grey-light">Proficient with Git and GitHub. Can use version control, manage
+                      repositories, and collaborate with others.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="column is-half-tablet is-one-third-desktop">
+            <div class="box skill-box">
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <h3 class="title is-4"><span class="skill-icon has-text-primary"><i class="fa-solid fa-align-justify"></i></span>Responsiveness</h3>
+                    <p>I am able to design and develop responsive websites that work well on all devices.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="column is-half-tablet is-one-third-desktop">
+            <div class="box skill-box has-background-dark">
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <h3 class="title is-4 has-text-light"><span class="skill-icon has-text-primary"><i class="fa-solid fa-bug"></i></span>Debugging</h3>
+                    <p class="has-text-grey-light">Experience using debugging tools and techniques to identify and fix issues in my code or others' code.</p>
                   </div>
                 </div>
               </article>
@@ -127,7 +157,7 @@
     </section>
     <section id="projects" class="section">
       <div class="container">
-        <h1 class="title has-text-light">Projects</h1>
+        <h1 class="title">Projects</h1>
         <div class="columns is-multiline">
           <div class="column is-half">
             <div class="card">
