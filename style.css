@@ -2,6 +2,27 @@ html {
   scroll-behavior: smooth;
 }
 
+#about .portfolio-img {
+  display: block;
+  height: 125px;
+  width: 125px;
+}
+
+#about img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+#about .flex-header {
+  gap: 40px;
+}
+
+/* #about .flex-header span{
+  background-image: url('assets/Me.png');
+  background-repeat: no-repeat;
+  object-fit: cover;
+} */
+
 nav.navbar{
   background-color: transparent !important;
   transition: all .2s;
@@ -52,5 +73,13 @@ nav.navbar{
 
   100% {
     background-position: 0 50%;
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1023px){
+  #navbar-header-menu {
+    background-color: black;
   }
 }
