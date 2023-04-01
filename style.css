@@ -48,7 +48,11 @@ nav.navbar{
   background-color: #fc466b;
   background-image: linear-gradient(to right, #fc466b 0%, #00b09b 68%) !important;
   background-size: 200%;
-  animation: gradient 10s ease infinite;
+  animation: gradient 6s ease infinite;
+}
+
+#projects img {
+  /* border-radius: .5rem; */
 }
 
 /* Define animations */
