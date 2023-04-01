@@ -22,26 +22,15 @@ nav.navbar{
   color: #9ca7b9;
 }
 
-.skill-box {
-  height: 100%;
-}
-
-.media {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.media-content {
-  flex: 1;
-}
-
 /* Position the skill icons to the left of the skill titles */
 .skill-icon {
   display: inline-block;
   margin-right: 0.5em;
   vertical-align: middle;
+}
+
+.box.skill-box {
+  box-shadow: 0 4px 12px -4px rgba(0, 0, 0, .80);
 }
 
 .hero.is-primary {
