@@ -3,26 +3,24 @@ html {
 }
 
 nav.navbar{
-  background-color: rgba(0, 0, 0, .4) !important;
-  backdrop-filter: blur(10px);
+  background-color: transparent !important;
+  transition: all .2s;
 }
 
-#navbar-menu .navbar-item {
+.navbar.solid-bg {
+  background-color: rgba(0, 0, 0, .75) !important;
+  backdrop-filter: blur(10px);
+  transition: all .2s;
+}
+
+#navbar-header-menu .navbar-item {
   background-color: transparent;
   color: #c7d3e5;
 }
 
-#navbar-menu .navbar-item:hover {
+#navbar-header-menu .navbar-item:hover {
   color: #9ca7b9;
 }
-
-/* .navbar-item:hover .icon {
-  color: #518ded;
-}
-
-.navbar-item:hover .subtitle {
-  color: #518ded;
-} */
 
 .skill-box {
   height: 100%;

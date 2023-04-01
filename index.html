@@ -10,16 +10,17 @@
     <link rel="stylesheet" href="style.css">
   </head>
 
-  <body>
+  <body class="has-background-dark has-text-light">
     <nav class="navbar is-fixed-top">
       <div class="navbar-brand">
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <a role="button" class="navbar-burger has-text-grey-light" aria-label="menu" aria-expanded="false">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div id="navbar-menu" class="is-flex is-justify-content-center is-align-content-center">
+      <div id="navbar-header-menu" class="navbar-menu"
+        class="is-flex is-justify-content-center is-align-content-center">
         <div class="navbar-start">
           <a class="navbar-item" href="#home">Home</a>
           <a class="navbar-item" href="#about">About</a>
@@ -43,7 +44,7 @@
     </section>
     <section id="about" class="section">
       <div class="container">
-        <h1 class="title">About Me</h1>
+        <h1 class="title has-text-light">About Me</h1>
         <p>I am a passionate junior frontend developer with a keen eye for design and a love for coding. I am proficient
           in HTML, CSS, and JavaScript, and have experience working with various front-end frameworks, including Bulma
           and Bootstrap.</p>
@@ -54,13 +55,13 @@
         <h2 class="title">Skills</h2>
         <div class="columns is-multiline">
           <div class="column is-half-tablet is-one-third-desktop">
-            <div class="box skill-box">
+            <div class="box skill-box has-background-black has-text-white-ter">
               <article class="media">
                 <div class="media-content">
                   <div class="content">
-                    <h3 class="title is-4"><span class="skill-icon has-text-primary"><i
+                    <h3 class="title is-4 has-text-light"><span class="skill-icon has-text-primary"><i
                           class="fab fa-html5"></i></span>HTML5</h3>
-                    <p>Proficient in writing semantic and accessible HTML code for web pages and web applications.</p>
+                    <p class="has-text-grey-light">Proficient in writing semantic and accessible HTML code for web pages and web applications.</p>
                   </div>
                 </div>
               </article>
@@ -80,13 +81,13 @@
             </div>
           </div>
           <div class="column is-half-tablet is-one-third-desktop">
-            <div class="box skill-box">
+            <div class="box skill-box has-background-black">
               <article class="media">
                 <div class="media-content">
                   <div class="content">
-                    <h3 class="title is-4"><span class="skill-icon has-text-primary"><i
+                    <h3 class="title is-4 has-text-light"><span class="skill-icon has-text-primary"><i
                           class="fab fa-js"></i></span>JavaScript</h3>
-                    <p>Proficient in writing vanilla JavaScript code and working with popular libraries and frameworks
+                    <p class="has-text-grey-light">Proficient in writing vanilla JavaScript code and working with popular libraries and frameworks
                       such as React and Vue.js.</p>
                   </div>
                 </div>
@@ -111,23 +112,22 @@
               <div class="card-content">
                 <div class="media">
                   <div class="media-content">
-                    <p class="title is-4">Project 1</p>
-                    <p class="subtitle is-6">Description of Project 1</p>
+                    <p class="title is-4">Node.js Todo</p>
+                    <p class="subtitle is-6 has-text-grey-light">Another todo...</p>
                   </div>
                 </div>
                 <div class="content">
                   <p> This todo project is a promising work in progress that has yet to be hosted on a suitable
                     platform. Despite this, the project showcases my skills in programming with node.js and my
-                    dedication to creating a useful application for managing tasks. Scroll through the images to get a
-                    peek at what I've been working on! </p>
+                    dedication to creating a useful application for managing tasks! </p>
                   <p> For this project, I used <strong>Express</strong> framework to develop the backend, such as the
                     RESTful routes. I also used <strong>mongoose</strong> to connect to one of my MongoDB databases, and
                     <strong>EJS</strong> for the templating engine. Finally, I decided to be a little more unique and
-                    use <strong>Bulma</strong> to build the styles. </p>
+                    use <strong>Bulma</strong> to build the the frontend styles. </p>
                 </div>
                 <div class="buttons">
-                  <a class="button is-primary" href="#">View Project</a>
-                  <a class="button is-info" href="#">GitHub</a>
+                  <!-- <a class="button is-primary" href="#">View Project</a> -->
+                  <a class="button is-info" href="https://github.com/adgar152369/Todo-List" target="_blank">GitHub</a>
                 </div>
               </div>
             </div>
@@ -136,7 +136,7 @@
             <div class="card">
               <div class="card-image">
                 <figure class="image is-4by3">
-                  <img src="project2.png" alt="Project 2">
+                  <img src="" alt="Project 2">
                 </figure>
               </div>
               <div class="card-content">
@@ -159,7 +159,7 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer has-background-black has-text-light">
       <div class="content has-text-centered">
         <p>&copy; 2023 Jane Doe. All rights reserved.</p>
       </div>

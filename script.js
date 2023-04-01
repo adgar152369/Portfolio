@@ -2,6 +2,10 @@
 const navbarBurger = document.querySelector('.navbar-burger');
 const navbarMenu = document.querySelector('.navbar-menu');
 const navbarMenuItems = document.querySelectorAll('.navbar-item');
+// select the navbar and the about section
+const navbar = document.querySelector('.navbar');
+const aboutSection = document.querySelector('#about');
+const homeSection = document.querySelector('#home');
 
 // Add a click event listener to the navbar burger button
 navbarBurger.addEventListener('click', () => {
@@ -18,3 +22,23 @@ navbarMenuItems.forEach(item => {
     navbarMenu.classList.remove('is-active');
   });
 });
+
+
+// Intersection Observer
+
+
+// create a new intersection observer
+const observer = new IntersectionObserver(entries => {
+  // check if the about section is in view
+  if (entries[0].isIntersecting) {
+    console.log('about')
+    // add a class to the navbar to change its background
+    navbar.classList.remove('solid-bg');
+  } else {
+    // remove the class if the about section is not in view
+    navbar.classList.add('solid-bg');
+  }
+});
+
+// observe the about section
+observer.observe(homeSection);
