@@ -61,6 +61,35 @@ nav.navbar{
   animation: gradient 6s ease infinite;
 }
 
+.hero-links {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.navbar-burger{
+  /* margin-right: 3rem; */
+}
+
+.navbar-burger:hover{
+  background: none;
+}
+.navbar-burger span{
+  /* width: 2rem; */
+  height: 3px;
+}
+
+.navbar-burger span:nth-child(3) {
+  top: calc(50% + 10px);
+}
+
+.navbar-burger span:nth-child(2) {
+  top: calc(50% - -2px);
+}
+
+.navbar-burger.is-active span:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg);
+}
+
 /* Define animations */
 @keyframes gradient {
   0% {
