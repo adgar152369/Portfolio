@@ -1,3 +1,5 @@
+import { selectTabs } from "./utilities.js";
+
 // Get the navbar burger button, navbar menu, and all the navbar menu items
 const navbarBurger = document.querySelector('.navbar-burger');
 const navbarMenu = document.querySelector('.navbar-menu');
@@ -32,3 +34,4 @@ const observer = new IntersectionObserver(entries => {
 });
 
 observer.observe(homeSection);
+selectTabs();

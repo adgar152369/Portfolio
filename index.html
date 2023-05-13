@@ -35,8 +35,10 @@
           <h2 class="subtitle"> I'm a Junior Frontend Developer </h2>
         </div>
         <div class="hero-links is-flex is-justify-content-space-evenly has-text-dark">
-          <span><a href="https://github.com/adgar152369" target="_blank"><i class="fa-brands fa-github fa-3x"></i></a></span>
-          <span><a href="din.com/in/adam-g-031575230/" target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i></a></span>
+          <span><a href="https://github.com/adgar152369" target="_blank"><i
+                class="fa-brands fa-github fa-3x"></i></a></span>
+          <span><a href="din.com/in/adam-g-031575230/" target="_blank"><i
+                class="fa-brands fa-linkedin fa-3x"></i></a></span>
         </div>
       </div>
       <div class="hero-footer">
@@ -126,98 +128,152 @@
     <section id="projects" class="section">
       <div class="container">
         <h1 class="title has-text-grey">Projects</h1>
-        <div class="columns is-multiline">
-          <div class="column is-one-third">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-4by2 border-radius">
-                  <img src="assets/home.png" alt="Project 1">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4">Node.js Todo</p>
-                    <p class="subtitle is-6 has-text-grey-light">Another todo...</p>
+        <div class="project-tabs tabs is-centered is-boxed">
+          <ul>
+            <li class="is-active"><a>Guided Projects</a></li>
+            <li><a>Collab Projects</a></li>
+            <li><a>My Projects</a></li>
+          </ul>
+        </div>
+        <div class="projects-flex-container">
+          <div class="columns is-multiline guided-projects projects appear">
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by2 border-radius">
+                    <img src="assets/home.png" alt="Project 1">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4 project-title">Node.js Todo</p>
+                      <p class="subtitle is-6 has-text-grey-light project-description">Another todo...</p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <p> This todo project is a promising work in progress that has yet to be hosted on a suitable
+                      platform. Despite this, the project showcases my skills in programming with node.js and my
+                      dedication to creating a useful application for managing tasks! </p>
+                    <p> For this project, I used <strong>Express</strong> framework to develop the backend, such as the
+                      RESTful routes. I also used <strong>mongoose</strong> to connect to one of my MongoDB databases,
+                      and <strong>EJS</strong> for the templating engine. Finally, I decided to be a little more unique
+                      and use <strong>Bulma</strong> to build the the frontend styles. </p>
+                  </div>
+                  <div class="buttons">
+                    <!-- <a class="button is-primary" href="#">View Project</a> -->
+                    <a class="button is-info" href="https://github.com/adgar152369/Todo-List" target="_blank">GitHub</a>
                   </div>
                 </div>
-                <div class="content">
-                  <p> This todo project is a promising work in progress that has yet to be hosted on a suitable
-                    platform. Despite this, the project showcases my skills in programming with node.js and my
-                    dedication to creating a useful application for managing tasks! </p>
-                  <p> For this project, I used <strong>Express</strong> framework to develop the backend, such as the
-                    RESTful routes. I also used <strong>mongoose</strong> to connect to one of my MongoDB databases, and
-                    <strong>EJS</strong> for the templating engine. Finally, I decided to be a little more unique and
-                    use <strong>Bulma</strong> to build the the frontend styles. </p>
+              </div>
+            </div>
+            <div class="column is-one-third">
+              <div class="card">
+                <!-- <div class="card-image">
+                  <figure class="image is-4by2 border-radius">
+                    <img src="assets/home.png" alt="Project 1">
+                  </figure>
+                </div> -->
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Ravenous</p>
+                      <p class="subtitle is-6 has-text-grey-light">A Yelp API based project to search for local
+                        businesses.</p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <p>Following this on Codecademy's <a
+                        href="https://www.codecademy.com/learn/paths/build-web-apps-with-react" target="_blank">Build A
+                        Frontend App</a>, I learned the basics of React, including useState and useEffect.</p>
+                    <p>This project simply enhanced my React foundations by providing me with a deeper appreciation of
+                      React's modular and reusable components and the Virtual DOM's benefits.</p>
+                  </div>
+                  <div class="buttons">
+                    <!-- <a class="button is-primary" href="#">View Project</a> -->
+                    <a class="button is-info" href="https://github.com/adgar152369/Ravenous" target="_blank">GitHub</a>
+                  </div>
                 </div>
-                <div class="buttons">
-                  <!-- <a class="button is-primary" href="#">View Project</a> -->
-                  <a class="button is-info" href="https://github.com/adgar152369/Todo-List" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by2 border-radius">
+                    <img src="assets/Jammming.png" alt="Project 3">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Jammming</p>
+                      <p class="subtitle is-6 has-text-grey-light">Following along Codecademy's Jammming project, using
+                        Spotify's API.</p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <p>Also following this on Codecademy's <a
+                        href="https://www.codecademy.com/learn/paths/build-web-apps-with-react" target="_blank">Build A
+                        Frontend App</a>, I learned the basics of access tokens, HTTP requests, and more about simple
+                      API's. This project allows users to query from the Spotify API for tracks, albums, and artists.
+                      The user is also able to add to a custom playlist, and then save that playlist to their spotify
+                      account. </p>
+                    <p>No frameworks included, besides React library. Just simple React, JavaScript, and CSS!</p>
+                  </div>
+                  <div class="buttons">
+                    <!-- <a class="button is-primary" href="#">View Project</a> -->
+                    <a class="button is-info" href="https://github.com/adgar152369/Spotify-Playlist"
+                      target="_blank">GitHub</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="column is-one-third">
-            <div class="card">
-              <!-- <div class="card-image">
-                <figure class="image is-4by2 border-radius">
-                  <img src="assets/home.png" alt="Project 1">
-                </figure>
-              </div> -->
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4">Ravenous</p>
-                    <p class="subtitle is-6 has-text-grey-light">A Yelp API based project to search for local businesses.</p>
+          <div class="columns is-multiline collab-projects projects">
+            <div class="column is-half">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by2 border-radius">
+                    <img src="assets/home.png" alt="Project 1">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4 project-title">ChatGPT Clone</p>
+                      <p class="subtitle is-6 has-text-grey-light project-description">
+                        Working with my outstanding co-worker, Tsukasa Muto, we are collaborating on a basic ChatGPT clone.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="content">
-                  <p>Following this on Codecademy's <a href="https://www.codecademy.com/learn/paths/build-web-apps-with-react" target="_blank">Build A Frontend App</a>, I learned the basics of React, including useState and useEffect.</p>
-                  <p>This project simply enhanced my React foundations by providing me with a deeper appreciation of React's modular and reusable components and the Virtual DOM's benefits.</p>
-                </div>
-                <div class="buttons">
-                  <!-- <a class="button is-primary" href="#">View Project</a> -->
-                  <a class="button is-info" href="https://github.com/adgar152369/Ravenous" target="_blank">GitHub</a>
+                  <div class="content">
+                    <p> Built with <strong>Vite</strong>, and <strong>React</strong> library.</p>
+                  </div>
+                  <div class="buttons">
+                    <a class="button is-info" href="https://github.com/adgar152369/Todo-List" target="_blank">GitHub</a>
+                  </div>
                 </div>
               </div>
             </div>
+            
           </div>
-          <div class="column is-one-third">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-4by2 border-radius">
-                  <img src="assets/Jammming.png" alt="Project 3">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4">Jammming</p>
-                    <p class="subtitle is-6 has-text-grey-light">Following along Codecademy's Jammming project, using Spotify's API.</p>
-                  </div>
-                </div>
-                <div class="content">
-                  <p>Also following this on Codecademy's <a href="https://www.codecademy.com/learn/paths/build-web-apps-with-react" target="_blank">Build A Frontend App</a>, I learned the basics of access tokens, HTTP requests, and more about simple API's. This project allows users to query from the Spotify API for tracks, albums, and artists. The user is also able to add to a custom playlist, and then save that playlist to their spotify account.</p>
-                  <p>No frameworks included, besides React library. Just simple React, JavaScript, and CSS!</p>
-                </div>
-                <div class="buttons">
-                  <!-- <a class="button is-primary" href="#">View Project</a> -->
-                  <a class="button is-info" href="https://github.com/adgar152369/Spotify-Playlist" target="_blank">GitHub</a>
-                </div>
-              </div>
-            </div>
+          <div class="columns is-multiline my-projects projects">
+            <h3>Nothing here yet :(</h3>
           </div>
-        
         </div>
       </div>
     </section>
-    <footer class="footer has-background-black has-text-light">
-      <div class="content has-text-centered">
-        <p>&copy; 2023 Adam Garcia. All rights reserved.</p>
-      </div>
-    </footer>
+
+    <!-- <div class="footer-container">
+      <footer class="footer has-background-black has-text-light">
+        <div class="content has-text-centered">
+          <p>&copy; 2023 Adam Garcia. All rights reserved.</p>
+        </div>
+      </footer>
+    </div> -->
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script type="module" src="scripts/script.js"></script>
   </body>
 
 </html>
