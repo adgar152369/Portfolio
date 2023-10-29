@@ -90,7 +90,7 @@ p {
 
 footer {
     position: absolute;
-    bottom: 2rem;
+    bottom: 0rem;
     left: 1rem;
 }
 
@@ -98,4 +98,10 @@ footer p {
     font-size: 12px;
     font-weight: 100;
     color: var(--mint-cream-dark);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
 }
