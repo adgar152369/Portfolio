@@ -1,0 +1,101 @@
+@import url("landing.css");
+@import url("contact.css");
+
+/* root variables */
+:root {
+    --wenge: #393031;
+    --wenge-dark: #221c1d;
+    --wenge-light: #615456;
+    --mint-cream: #f1f7ed;
+    --mint-cream-dark: #b9c3b2;
+    --cambridge-blue: #91c7b1;
+    --cambridge-blue-1: #455c53;
+    --red: #b33951;
+    --red-light: #c49ca4;
+    --flax: #e3d081;
+    --flax-dark: #8a7d49;
+    --charcoal: #3E4850;
+    --charcoal-dark: #2a323a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--charcoal);
+    color: var(--mint-cream);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 1rem 2rem;
+    position: relative;
+    margin: auto;
+}
+
+.title {
+    font-family: 'Red Hat Display', sans-serif;
+    color: var(--cambridge-blue);
+    margin-block: 1rem;
+}
+
+.subtitle {
+    font-family: 'Red Hat Display', sans-serif;
+    margin-block: 1rem;
+}
+
+.section-title {
+    font-weight: 600;
+    color: var(--charcoal-dark);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    position: relative;
+    margin-block: 1rem;
+    letter-spacing: 1px;
+}
+
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    left: -1rem;
+    top: 50%;
+    background-color: var(--charcoal-dark);
+}
+
+p {
+    line-height: 26px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 14px;
+    font-family: system-ui;
+    color: var(--mint-cream);
+}
+
+.button {
+    padding: .5rem 1rem;
+    background: none;
+    border: solid 1px rgba(206, 206, 206, 0.251);
+    color: var(--mint-cream);
+    border-radius: 5px;
+}
+
+footer {
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+}
+
+footer p {
+    font-size: 12px;
+    font-weight: 100;
+    color: var(--mint-cream-dark);
+}
