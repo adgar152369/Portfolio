@@ -1,3 +1,184 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-purple1: #7949AC;
+  --color-purple2: #A185C2;
+  --color-pink1: #E7409F;
+  --color-white: #fff;
+  --color-bg-black: #170A18;
+  --color-bg-white: #fff;
+  --color-coral: #F36B70;
+  --color-gold: #FFC475;
+  --color-blue1: #648FCF;
+  --color-blue2: #97BBF1;
+  --color-green1: #D5F7C9;
+  --color-green2: #5A9F41;
+
+  --base-inline-padding: 1.5rem;
+}
+
 body {
-    background: #2F2F2F;
+  background: var(--color-bg-white);
+  font-family: "Lexend", sans-serif;
+  color: white;
+  position: relative;
+}
+
+button {
+  border: none;
+  padding: .75rem;
+  border-radius: 10px;
+  font-family: "Lexend", sans-serif;
+  color: var(--color-white);
+  margin-block: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+section {
+  min-height: 100dvh;
+  padding: 2rem var(--base-inline-padding);
+}
+
+section:not(.landing) {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Show When Visible */
+section.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+section img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  z-index: -1;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 4rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section-title {
+  position: relative;
+  font-size: 2rem;
+  margin-block: 4rem;
+}
+
+.section-subtitle {
+  color: var(--color-blue2);
+}
+
+.section-flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4.125rem;
+}
+
+.second-half {
+  /* border-top: solid 2px white; */
+  /* padding-top: 1rem; */
+  color: var(--color-blue2);
+}
+
+.second-half h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-me {
+  color: var(--color-blue1);
+}
+
+.about-me h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: var(--color-blue1);
+  height: 4px;
+  left: 0;
+  bottom: -.75rem;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-title {
+  color: var(--color-bg-black);
+  font-size: 3.25rem;
+}
+
+.intro-title span {
+  color: var(--color-coral);
+}
+
+.cta {
+  background: var(--color-purple1);
+  /* border: solid 2px var(--color-purple1); */
+  color: var(--color-white);
+  width: 140px;
+  font-size: 1.05rem;
+  /* margin: 2rem auto; */
+}
+
+header {
+  height: 100%;
+  width: 45%;
+  position: fixed;
+  padding: 1rem 1.25rem;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  background-color: var(--color-coral);
+}
+
+.main-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main-nav a {
+  color: var(--color-bg-black);
+  text-decoration: none;
+}
+
+.job-info {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin-block: 2rem;
+}
+
+.job-title {
+  font-size: 1.25rem;
+}
+
+.job-desc {
+  color: var(--color-white);
+}
+
+.projects {
+  color: var(--color-green2);
 }

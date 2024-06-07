@@ -5,19 +5,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
   <title>Adam Garcia Portfolio</title>
 </head>
 
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Contact Me</a></li>
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Contact</a></li>
       </ul>
     </nav>
   </header>
+  <section class="landing">
+    <h1 class="intro-title">
+      Hi, I'm Adam Garcia. <span class="">Web Developer.</span>
+    </h1>
+    <button class="cta">Contact Me</button>
+    <img class="cali-bg" src="/assets/cali-bg.svg" alt="">
+  </section>
+
+  <section class="about-me">
+    <h2 class="section-title">About Me</h2>
+    <div class="section-flex-container">
+      <div class="jobs">
+        <div class="job-info">
+          <div>
+            <h4 class="job-company section-subtitle">Freelancer</h4>
+            <p class="job-years">2023-Present</p>
+          </div>
+          <h4 class="job-title section-subtitle">BigCommerce Developer</h4>
+          <p class="job-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, consequuntur!
+          </p>
+        </div>
+        <div class="job-info">
+          <div>
+            <h4 class="job-company section-subtitle">Shelfology</h4>
+            <p class="job-years">2023-Present</p>
+          </div>
+          <h4 class="job-title section-subtitle">Front-End Developer</h4>
+          <p class="job-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ut.
+          </p>
+        </div>
+      </div>
+      <div class="second-half more-about-me">
+        <h3>More About Me</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consequatur nobis labore, unde ex blanditiis eaque aperiam molestias non facilis vel magni adipisci deserunt rerum sed doloremque laborum sit perspiciatis expedita minus suscipit similique cum ipsam! Provident velit impedit aliquid, consequatur perspiciatis vero? Mollitia iure nemo nesciunt, excepturi magni sequi.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <h2 class="section-title">Projects</h2>
+  </section>
+
+  <script src="/script.js"></script>
 </body>
 
 </html>
