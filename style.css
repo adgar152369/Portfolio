@@ -7,22 +7,25 @@
 :root {
   --color-purple1: #7949AC;
   --color-purple2: #A185C2;
+  --color-dark-purple: #351D49;
   --color-pink1: #E7409F;
   --color-white: #fff;
   --color-bg-black: #170A18;
   --color-bg-white: #fff;
   --color-coral: #F36B70;
+  --color-bitter: #F36B70;
   --color-gold: #FFC475;
   --color-blue1: #648FCF;
   --color-blue2: #97BBF1;
-  --color-green1: #D5F7C9;
+  --color-cyan: #97F9F9;
+  --color-green1: #A9F0D1;
   --color-green2: #5A9F41;
 
   --base-inline-padding: 1.5rem;
 }
 
 body {
-  background: var(--color-bg-white);
+  background: var(--color-dark-purple);
   font-family: "Lexend", sans-serif;
   color: white;
   position: relative;
@@ -63,6 +66,80 @@ section img {
   height: 50%;
   width: 100%;
   z-index: -1;
+}
+
+header {
+  height: 100%;
+  width: 45%;
+  position: fixed;
+  padding: 1rem 1.25rem;
+  right: 0;
+  top: 0;
+  background-color: var(--color-coral);
+  transition: all .25s ease;
+}
+
+header.closed {
+  opacity: 0;
+  transform: translateX(100%);
+  z-index: -1;
+}
+header.opened {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 1;
+}
+
+header.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-open {
+  position: absolute;
+  color: var(--color-white);
+  opacity: 1;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.nav-close {
+  font-size: 1.5rem;
+  color: var(--color-bg-black);
+  display: inline-block;
+}
+.nav-close:hover {
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.main-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-block: 3rem;
+}
+
+.main-nav i {
+  font-size: 1.75rem;
+  height: 28px;
+  width: 31px;
+}
+
+.main-nav a {
+  color: var(--color-bg-black);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.25rem;
+  transition: color .125s ease;
+}
+.main-nav a:hover{
+  color: var(--color-purple1);
 }
 
 .landing {
@@ -125,43 +202,22 @@ ul {
 }
 
 .intro-title {
-  color: var(--color-bg-black);
+  color: var(--color-purple1);
   font-size: 3.25rem;
 }
 
 .intro-title span {
-  color: var(--color-coral);
+  color: var(--color-bitter);
 }
 
 .cta {
-  background: var(--color-purple1);
-  /* border: solid 2px var(--color-purple1); */
-  color: var(--color-white);
+  background: var(--color-cyan);
+  /* background: none; */
+  /* border: solid 2px var(--color-cyan); */
+  color: var(--color-bg-black);
   width: 140px;
   font-size: 1.05rem;
   /* margin: 2rem auto; */
-}
-
-header {
-  height: 100%;
-  width: 45%;
-  position: fixed;
-  padding: 1rem 1.25rem;
-  right: 0;
-  top: 0;
-  z-index: 1;
-  background-color: var(--color-coral);
-}
-
-.main-nav-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.main-nav a {
-  color: var(--color-bg-black);
-  text-decoration: none;
 }
 
 .job-info {
