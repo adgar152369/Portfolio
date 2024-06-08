@@ -4,96 +4,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/3a2bd97600.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <script defer src="./script.js"></script>
+
   <title>Adam Garcia Portfolio</title>
 </head>
 
 <body>
-  <div class="nav-open">
-    <div class="nav-open-line line-1"></div>
-    <div class="nav-open-line line-2"></div>
-    <!-- <div class="nav-open-line line-3"></div> -->
-  </div>
-  <header class="main-header closed">
-    <div class="menu">
-      <div class="nav-close">
-        <i class="fa-solid fa-xmark"></i>
-      </div>
+  <header>
+    <div class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
-    <nav class="main-nav">
-      <ul class="main-nav-list">
-        <li><a href=""><i class="fa-solid fa-house-chimney"></i><span>Home</span></a></li>
-        <li><a href=""><i class="fa-solid fa-user-tie"></i><span>About</span></a></li>
-        <li><a href=""><i class="fa-solid fa-file-code"></i><span>Projects</span></a></li>
-        <li><a href=""><i class="fa-solid fa-circle-info"></i><span>Contact</span></a></li>
+    <nav>
+      <div class="logo">Portfolio</div>
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="">Home.</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Resume.</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Projects.</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Contact.</a></li>
       </ul>
     </nav>
   </header>
-  <section class="landing">
-    <h1 class="intro-title">
-      <span>Hi,</span> I'm Adam Garcia. <span class="">Web Developer.</span>
-    </h1>
-    <button class="cta">Contact Me</button>
-    <!-- <img class="cali-bg" src="./assets/cali-bg.svg" alt=""> -->
-  </section>
 
-  <section class="section about-me">
-    <h2 class="section-title">About Me</h2>
-    <div class="section-flex-container">
-      <div class="jobs">
-        <div class="job-info">
-          <div>
-            <h4 class="job-company section-subtitle">Freelancer</h4>
-            <p class="job-years">2023-Present</p>
-          </div>
-          <h4 class="job-title section-subtitle">BigCommerce Developer</h4>
-          <p class="job-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ut. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Doloribus, consequuntur!
-          <ul class="tech-stack">
-            <li>
-              <i class="devicon-handlebars-original"></i>
-            </li>
-            <li>
-              <i class="fa-brands fa-sass"></i>
-            </li>
-            <li>
-              <i class="devicon-jquery-plain-wordmark"></i>
-            </li>
-          </ul>
-          </p>
-        </div>
-        <div class="job-info">
-          <div>
-            <h4 class="job-company section-subtitle">Shelfology</h4>
-            <p class="job-years">2023-Present</p>
-          </div>
-          <h4 class="job-title section-subtitle">Front-End Developer</h4>
-          <p class="job-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ut.
-          </p>
-        </div>
-      </div>
-      <div class="second-half more-about-me">
-        <h3>More About Me</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consequatur nobis labore, unde ex blanditiis
-          eaque aperiam molestias non facilis vel magni adipisci deserunt rerum sed doloremque laborum sit perspiciatis
-          expedita minus suscipit similique cum ipsam! Provident velit impedit aliquid, consequatur perspiciatis vero?
-          Mollitia iure nemo nesciunt, excepturi magni sequi.</p>
-      </div>
+  <section class="landing centered">
+    <div>
+      <h1 class="landing-title">
+        It's <span>Adam.</span>
+        <div class="landing-titleStyled">A Web Developer.</div>
+      </h1>
+      <!-- <p>
+        I am a freelance web developer dedicated to helping businesses grow their online presence through simple, yet quality BigCommerce solutions.
+        Let's discuss how I can help you create a BigCommerce website that exceeds your expectations.
+      </p> -->
     </div>
   </section>
-
-  <section class="section projects">
-    <h2 class="section-title">Projects</h2>
-  </section>
-
-  <script src="./script.js"></script>
 </body>
 
 </html>

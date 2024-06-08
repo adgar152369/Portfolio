@@ -1,16 +1,14 @@
 const sections = document.querySelectorAll('section');
-const navOpen = document.querySelector('.nav-open');
+const hamburger = document.querySelector('.hamburger');
 const navClose = document.querySelector('.nav-close');
-const navigationMenu = document.querySelector('.main-header');
+const nav = document.querySelector('nav');
+const mainHeader = document.querySelector('header');
 
-navOpen.addEventListener('click', openNavigation);
+hamburger.addEventListener('click', openNavigation);
 
 function openNavigation() {
-  navigationMenu.classList.add('opened');
-  navClose.addEventListener('click', () => {
-    navigationMenu.classList.add('closed');
-    navigationMenu.classList.remove('opened');
-  })
+  mainHeader.classList.toggle('open');
+  nav.classList.toggle('open');
 }
 
 const observer = new IntersectionObserver(entries => {
