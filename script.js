@@ -20,7 +20,7 @@ const observer = new IntersectionObserver(entries => {
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.5 }); // Trigger at 50% visibility
+}, { threshold: 0.25 }); // Trigger at 50% visibility
 
 sections.forEach(section => {
   observer.observe(section);

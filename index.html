@@ -9,12 +9,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/3a2bd97600.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <title>Adam Garcia Portfolio</title>
 </head>
 
 <body>
   <div class="nav-open">
-    <i class="fa-solid fa-bars"></i>
+    <div class="nav-open-line line-1"></div>
+    <div class="nav-open-line line-2"></div>
+    <!-- <div class="nav-open-line line-3"></div> -->
   </div>
   <header class="main-header closed">
     <div class="menu">
@@ -33,13 +36,13 @@
   </header>
   <section class="landing">
     <h1 class="intro-title">
-      Hi, I'm Adam Garcia. <span class="">Web Developer.</span>
+      <span>Hi,</span> I'm Adam Garcia. <span class="">Web Developer.</span>
     </h1>
     <button class="cta">Contact Me</button>
-    <img class="cali-bg" src="assets/cali-bg.svg" alt="">
+    <!-- <img class="cali-bg" src="./assets/cali-bg.svg" alt=""> -->
   </section>
 
-  <section class="about-me">
+  <section class="section about-me">
     <h2 class="section-title">About Me</h2>
     <div class="section-flex-container">
       <div class="jobs">
@@ -50,7 +53,19 @@
           </div>
           <h4 class="job-title section-subtitle">BigCommerce Developer</h4>
           <p class="job-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, consequuntur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ut. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Doloribus, consequuntur!
+          <ul class="tech-stack">
+            <li>
+              <i class="devicon-handlebars-original"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-sass"></i>
+            </li>
+            <li>
+              <i class="devicon-jquery-plain-wordmark"></i>
+            </li>
+          </ul>
           </p>
         </div>
         <div class="job-info">
@@ -66,16 +81,19 @@
       </div>
       <div class="second-half more-about-me">
         <h3>More About Me</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consequatur nobis labore, unde ex blanditiis eaque aperiam molestias non facilis vel magni adipisci deserunt rerum sed doloremque laborum sit perspiciatis expedita minus suscipit similique cum ipsam! Provident velit impedit aliquid, consequatur perspiciatis vero? Mollitia iure nemo nesciunt, excepturi magni sequi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consequatur nobis labore, unde ex blanditiis
+          eaque aperiam molestias non facilis vel magni adipisci deserunt rerum sed doloremque laborum sit perspiciatis
+          expedita minus suscipit similique cum ipsam! Provident velit impedit aliquid, consequatur perspiciatis vero?
+          Mollitia iure nemo nesciunt, excepturi magni sequi.</p>
       </div>
     </div>
   </section>
 
-  <section class="projects">
+  <section class="section projects">
     <h2 class="section-title">Projects</h2>
   </section>
 
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
