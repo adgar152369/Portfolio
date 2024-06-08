@@ -83,7 +83,7 @@ header {
   padding: 1rem 1.25rem;
   right: 0;
   top: 0;
-  background-color: var(--color-dark-purple);
+  background-color: var(--color-coral);
   transition: all .25s ease;
 }
 
@@ -153,7 +153,7 @@ header.menu {
 }
 
 .main-nav a {
-  color: var(--color-purple2);
+  color: var(--color-licorice);
   text-decoration: none;
   display: flex;
   align-items: center;
