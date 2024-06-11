@@ -23,6 +23,7 @@ body {
   background-color: #EABB99;
   color: #464646;
   position: relative;
+  /* padding-bottom: 10rem; */
 }
 
 h2,
@@ -66,7 +67,7 @@ section {
 
 section:not(.landing) {
   opacity: 0;
-  padding: 6rem 3rem;
+  padding: 3rem 3rem 6rem 3rem;
   margin: 0 auto;
   transform: translateX(-20px);
   transition: all .75s ease-in-out;
@@ -75,6 +76,11 @@ section:not(.landing) {
 section:not(.landing).show {
   opacity: 1;
   transform: translateX(0);
+}
+
+section:not(.landing):nth-child(even) {
+  background-color: #36454F;
+  color: #BFBEBF;
 }
 
 .section-subtitle {
@@ -303,7 +309,7 @@ nav.open {
 /* Projects */
 
 #projects {
-  background-color: #36454F;
+  /* background-color: #36454F; */
   max-width: none;
 }
 
@@ -400,6 +406,15 @@ nav.open {
 
 /* Work With Me */
 
+.work-with-me h3 {
+  color: #FFF;
+  font-size: 1.75rem;
+}
+.work-with-me a, 
+.work-with-me p {
+  color: #B8DBD9;
+}
+
 .work-with-me img{
   border-radius: 10px;
 }
@@ -438,7 +453,15 @@ nav.open {
   }
 }
 
-
+footer {
+  /* background-color: #1E1E1E; */
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  color: #BFBEBF;
+  padding: 1rem;
+  font-family: "Vollkorn", serif;
+}
 
 
 .placeholder-image {
