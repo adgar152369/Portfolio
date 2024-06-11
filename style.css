@@ -90,8 +90,9 @@ section:not(.landing):nth-child(even) {
 
 header {
   padding: 2rem 1rem;
-  position: absolute;
+  position: fixed;
   background: none;
+  z-index: 1;
 }
 
 header.open {
@@ -187,6 +188,7 @@ nav.open {
   border: solid 2px var(--color-black);
   padding: 10px;
   cursor: pointer;
+  mix-blend-mode: difference;
 }
 
 .hamburger div {
