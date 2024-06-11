@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <script src="https://kit.fontawesome.com/3a2bd97600.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <script defer src="./script.js"></script>
@@ -16,7 +17,7 @@
 
 <body>
   <header>
-    <div class="hamburger">
+    <div class="hamburger toggle-navMenu">
       <div></div>
       <div></div>
       <div></div>
@@ -24,10 +25,16 @@
     <nav>
       <div class="logo">Portfolio</div>
       <ul class="nav-list">
-        <li class="nav-item"><a class="nav-link" href="">Home.</a></li>
-        <li class="nav-item"><a class="nav-link" href="">Resume.</a></li>
-        <li class="nav-item"><a class="nav-link" href="">Projects.</a></li>
-        <li class="nav-item"><a class="nav-link" href="">Contact.</a></li>
+        <li class="nav-item"><a class="nav-link toggle-navMenu" href="">Home</a></li>
+        <li class="nav-item"><a class="nav-link toggle-navMenu" href="https://azure-kailey-45.tiiny.site/" target="_blank">Resume</a></li>
+        <li class="nav-item"><a class="nav-link toggle-navMenu" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link toggle-navMenu" href="#work-with-me">Contact</a></li>
+      </ul>
+      <ul class="social-list">
+        <li><a target="_blank" href="https://github.com/adgar152369"><i class="fa-brands fa-github"></i></a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/in/adam-g-031575230"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a target="_blank" href="https://www.upwork.com/freelancers/~010e92ad7966b90d5c"><i class="fa-brands fa-upwork"></i></a></li>
+        <li><a target="_blank" href="https://dribbble.com/javees/about?utm_source=Clipboard_%22clipboard_about%22&utm_campaign=%22javees%22&utm_content=%22About%20javees%22&utm_medium=Social_Share"><i class="fa-brands fa-dribbble"></i></a></li>
       </ul>
     </nav>
   </header>
@@ -35,13 +42,193 @@
   <section class="landing centered">
     <div>
       <h1 class="landing-title">
-        It's <span>Adam.</span>
+        Adam <span>Garcia.</span>
         <div class="landing-titleStyled">A Web Developer.</div>
       </h1>
-      <!-- <p>
-        I am a freelance web developer dedicated to helping businesses grow their online presence through simple, yet quality BigCommerce solutions.
-        Let's discuss how I can help you create a BigCommerce website that exceeds your expectations.
-      </p> -->
+      <a href="#about" class="cta">Let's Go. <i class="fa-solid fa-arrow-down"></i></a>
+    </div>
+  </section>
+  
+  <section id="about" class="about">
+    <h2 class="section-subtitle m-y-md">About Me</h2>
+    <div class="flex-container about-content">
+      <div class="left-flex">
+        <ul class="jobs-list flex-container">
+          <li class="job">
+            <div class="job-info">
+              <h4 class="job-company">Freelancer</h4>
+              <p class="job-years">2023-Present</p>
+            </div>
+            <div class="job-desc">
+              <h3 class="job-title">Web Developer</h3>
+              <p>Currently working with a number of clients on Upwork. For example, I am working part-time with Princess Jewelry, an amazing online jewelry company, to create beautiful and improve layouts. Our teamwork has been smooth and efficient, driven by excellent communication.</p>
+              <ul class="job-techStack tech-stack flex-container m-y-sm">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+                <li><i class="fa-brands fa-sass"></i></li>
+                <li><i class="devicon-jquery-plain-wordmark"></i></li>
+                <li><i class="devicon-handlebars-original"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="job">
+            <div class="job-info">
+              <h4 class="job-company">Shelfology</h4>
+              <p class="job-years">2022-2023</p>
+            </div>
+            <div class="job-desc">
+              <h3 class="job-title">BigCommerce Developer</h3>
+              <p>As Front-End Developer at Shelfology, a shelving manufacturer, Idaho-based company, I helped with implementing designs and e-commerce strategies.</p>
+              <ul class="job-techStack tech-stack flex-container m-y-sm">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+                <li><i class="fa-brands fa-sass"></i></li>
+                <li><i class="devicon-jquery-plain-wordmark"></i></li>
+                <li><i class="devicon-handlebars-original"></i></li>
+                <li><i class="fa-brands fa-github"></i></li>
+                <li><i class="fa-brands fa-figma"></i></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="right-flex">
+        <p class="additional-about">
+          I spent my first two years of my professional career helping a small company in Idaho find their visual identities and bring them to light in the best way possible. <br>
+          I also know what’s it like to wear multiple hats and juggle various responsibilities simultaneously, and to leverage innovative solutions with constrained budgets.
+        </p>
+        <p class="">
+          I am a freelance web developer, based in San Diego, CA, dedicated to helping businesses grow their online presence through simple, yet quality solutions.
+          Let's discuss how I can help you create a website that exceeds your expectations.
+        </p>
+        <button class="cta contact-btn">Let's Talk</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2 class="section-subtitle m-y-md">My Projects</h2>
+    <ul class="projects-list">
+      <li class="project">
+        <div class="project-desc flex-container">
+          <div class="project-details">
+            <div class="project-info">
+              <h4 class="project-type">Full-Stack</h4>
+              <p class="project-years">2022-2023</p>
+            </div>
+            <h3 class="project-title">Habit Tracker</h3>
+            <p>As Front-End Developer at Shelfology, a shelving manufacturer, Idaho-based company, I helped with implementing designs and e-commerce strategies.</p>
+            <ul class="project-techStack tech-stack flex-container m-y-sm">
+              <li><i class="fa-brands fa-html5"></i></li>
+              <li><i class="fa-brands fa-js"></i></li>
+              <li><i class="fa-brands fa-sass"></i></li>
+              <li><i class="devicon-jquery-plain-wordmark"></i></li>
+              <li><i class="devicon-handlebars-original"></i></li>
+              <li><i class="fa-brands fa-github"></i></li>
+              <li><i class="fa-brands fa-figma"></i></li>
+            </ul>
+          </div>
+          <img class="placeholder-image" src="" data-src="actual-image.jpg" alt="Image description" width="245" height="180">
+          <!-- <div class="placeholder-image">
+          </div> -->
+        </div>
+      </li>
+      <li class="project">
+        <div class="project-desc flex-container">
+          <div class="project-details">
+            <div class="project-info">
+              <h4 class="project-type">Front-End</h4>
+              <p class="project-years">2022-2023</p>
+            </div>
+            <h3 class="project-title">BigCommerce App</h3>
+            <p>As Front-End Developer at Shelfology, a shelving manufacturer, Idaho-based company, I helped with implementing designs and e-commerce strategies.</p>
+            <ul class="project-techStack tech-stack flex-container m-y-sm">
+              <li><i class="fa-brands fa-html5"></i></li>
+              <li><i class="fa-brands fa-js"></i></li>
+              <li><i class="fa-brands fa-sass"></i></li>
+              <li><i class="devicon-jquery-plain-wordmark"></i></li>
+              <li><i class="devicon-handlebars-original"></i></li>
+              <li><i class="fa-brands fa-github"></i></li>
+              <li><i class="fa-brands fa-figma"></i></li>
+            </ul>
+          </div>
+          <img class="placeholder-image" src="" data-src="actual-image.jpg" alt="Image description" width="245" height="180">
+          <!-- <div class="placeholder-image">
+          </div> -->
+        </div>
+      </li>
+      <li class="project">
+        <div class="project-desc flex-container">
+          <div class="project-details">
+            <div class="project-info">
+              <h4 class="project-type">BigCommerce</h4>
+              <p class="project-years">2024</p>
+            </div>
+            <h3 class="project-title">Sitewide Discount/Promotion Prices</h3>
+            <p>As Front-End Developer at Shelfology, a shelving manufacturer, Idaho-based company, I helped with implementing designs and e-commerce strategies.</p>
+            <ul class="project-techStack tech-stack flex-container m-y-sm">
+              <li><i class="fa-brands fa-html5"></i></li>
+              <li><i class="fa-brands fa-js"></i></li>
+              <li><i class="fa-brands fa-sass"></i></li>
+              <li><i class="devicon-jquery-plain-wordmark"></i></li>
+              <li><i class="devicon-handlebars-original"></i></li>
+              <li><i class="fa-brands fa-github"></i></li>
+              <li><i class="fa-brands fa-figma"></i></li>
+            </ul>
+          </div>
+          <img class="placeholder-image" src="" data-src="actual-image.jpg" alt="Image description" width="245" height="180">
+          <!-- <div class="placeholder-image">
+          </div> -->
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section id="freelance" class="freelance">
+    <h2 class="section-subtitle m-y-md">Upwork Reviews</h2>
+    <ul class="reviews-list flex-container">
+      <li class="review">
+        <div class="review-desc flex-container">
+          <div class="review-details">
+            <h3 class="review-client">Princess Jewelry</h3>
+            <blockquote>"Adam is great!!!"</blockquote>
+          </div>
+          
+        </div>
+      </li>
+      <li class="review">
+        <div class="review-desc flex-container">
+          <div class="review-details">
+            <h3 class="review-client">Jasmine Moon</h3>
+            <blockquote>"Adam was great to work with!"</blockquote>
+          </div>
+          
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="work-with-me" class="work-with-me">
+    <h2 class="section-subtitle m-y-md">Work With Me</h2>
+    <div class="flex-container">
+      <img src="assets/fam-cali.jpeg" alt="hanging out at the beach with my best friends" width="640">
+      <ul class="contact-info">
+        <li>
+          <h3>Address</h3>
+          <p>San Diego, CA</p>
+        </li>
+        <li>
+          <h3>Phone</h3>
+          <p>(719) 360-0789</p>
+        </li>
+        <li>
+          <h3>Email</h3>
+          <p><a href="mailto:adamg110911@gmail.com">adamg110911@gmail.com</a></p>
+        </li>
+        <li>
+          <h3>Upwork</h3>
+          <p><a href="https://www.upwork.com/freelancers/~010e92ad7966b90d5c" target="_blank">adamg96</a></p>
+        </li>
+      </ul>
     </div>
   </section>
 </body>

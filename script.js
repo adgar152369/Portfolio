@@ -1,15 +1,16 @@
 const sections = document.querySelectorAll('section');
-const hamburger = document.querySelector('.hamburger');
+const hamburger = document.querySelectorAll('.toggle-navMenu');
 const navClose = document.querySelector('.nav-close');
 const nav = document.querySelector('nav');
 const mainHeader = document.querySelector('header');
-
-hamburger.addEventListener('click', openNavigation);
 
 function openNavigation() {
   mainHeader.classList.toggle('open');
   nav.classList.toggle('open');
 }
+
+hamburger.forEach((navLink) => navLink.addEventListener('click', openNavigation));
+
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
