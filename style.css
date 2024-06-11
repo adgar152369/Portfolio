@@ -459,7 +459,6 @@ nav.open {
 
 .blinking-cursor {
   animation: blink 1s steps(1) infinite;
-  margin-left: -10px;
 }
 
 @keyframes blink {
@@ -483,4 +482,59 @@ footer {
   background-color: #586F7C;
   /* Light gray background */
   border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .landing {
+    padding: 2rem 1rem;
+  }
+  .landing-title {
+    font-size: 3rem;
+  }
+  header {
+    padding: 1rem;
+    right: 0;
+  }
+  .nav-link {
+    font-size: 3rem;
+  }
+  section:not(.landing) {
+    padding: 1rem;
+  }
+  .section-subtitle {
+    font-size: 2rem;
+  }
+  .about-content {
+    max-width: 100%;
+  }
+  .about div.flex-container::before {
+    display: none;
+  }
+  .m-y-md {
+    margin-block: 1.5rem;
+  }
+  .about div.flex-container {
+    gap: 2rem;
+  }
+  .work-with-me img {
+    width: 100%;
+  }
+  .work-with-me .flex-container {
+    max-width: none;
+    margin: 0;
+  }
+  .right-flex,
+  .left-flex {
+    flex: unset;
+  }
+  .project-details {
+    flex: unset;
+  }
+  .project:nth-child(even) .project-desc {
+    flex-direction: unset;
+  }
+  footer {
+    background-color: #36454F;
+    bottom: -3rem;
+  }
 }
