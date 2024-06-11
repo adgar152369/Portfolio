@@ -169,7 +169,7 @@ nav.open {
   font-size: 6rem;
 }
 
-.landing-title span {
+.landing-title .lastName {
   color: #3c94d2;
 }
 
@@ -334,7 +334,7 @@ nav.open {
   font-weight: 600;
 }
 
-.project:nth-child(even) .project-desc{
+.project:nth-child(even) .project-desc {
   flex-direction: row-reverse;
 }
 
@@ -348,7 +348,7 @@ nav.open {
   flex: 3;
 }
 
-.project-details p{
+.project-details p {
   max-width: 100%;
   color: #B8DBD9;
 }
@@ -388,6 +388,7 @@ nav.open {
   position: relative;
   padding-left: 14px;
 }
+
 .reviews-list blockquote::before {
   position: absolute;
   content: "";
@@ -412,12 +413,13 @@ nav.open {
   color: #FFF;
   font-size: 1.75rem;
 }
-.work-with-me a, 
+
+.work-with-me a,
 .work-with-me p {
   color: #B8DBD9;
 }
 
-.work-with-me img{
+.work-with-me img {
   border-radius: 10px;
 }
 
@@ -427,7 +429,7 @@ nav.open {
   margin: 0 auto;
 }
 
-.contact-info{
+.contact-info {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -455,6 +457,17 @@ nav.open {
   }
 }
 
+.blinking-cursor {
+  animation: blink 1s steps(1) infinite;
+  margin-left: -10px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 footer {
   /* background-color: #1E1E1E; */
   position: absolute;
@@ -467,6 +480,7 @@ footer {
 
 
 .placeholder-image {
-  background-color: #586F7C; /* Light gray background */
+  background-color: #586F7C;
+  /* Light gray background */
   border-radius: 5px;
 }
